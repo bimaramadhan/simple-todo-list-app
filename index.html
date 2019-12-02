@@ -4,28 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>localtodo</title>
+    <title>Tugas ToDo</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   </head>
   <body>
-    <h1>localtodo</h1>
-    <p>your local todo list</p>
+    <h1>Todo List App</h1>
+    <p>DILo Developers Camp</p>
 
-    <!-- start of list area -->
-    <ul id="todo-list"></ul>
-    <!-- end of list area -->
+    <div class="row">
+      <div class="col-lg-6">
+        <!-- start of list area -->
+        <!-- <ul id="todo-list" class="list-group">
+      
+        </ul> -->
+        <div class="row">
+            <div class="col-md-8">
+              <input type="text" class="form-control" placeholder="Type Todo List" id="todo-input" />
+            </div>
+            <div class="col-md-4" style="text-align: right;">
+              <button class="btn btn-primary btn-sm" id="add-todo">
+                <i class="glyphicon glyphicon-plus"></i>&nbsp;
+                Add
+              </button>
+              <button class="btn btn-warning btn-sm" id="reset-todo">
+                  <i class="glyphicon glyphicon-refresh"></i>&nbsp;
+                  Reset
+              </button>
+            </div>
+        </div>
+        <table class="table table-striped">
+            <thead>
+              <tr>
+              </tr>
+            </thead>
+            <tbody id="todo-list">
 
+            </tbody>
+        </table>
+        <!-- end of list area -->
+      </div>
+    </div>
     <!-- start of input area -->
-    <input type="text" placeholder="Do something" id="todo-input" />
-    <button id="add-todo">Add todo</button>
-    <button id="reset-todo">Reset</button>
     <!-- end of input area -->
 
-    <small>
-      <a href="https://github.com/grikomsn/localtodo">
-        View source on GitHub
-      </a>
-    </small>
     <script src="script.js"></script>
   </body>
 </html>
